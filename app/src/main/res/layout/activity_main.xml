@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bigyoung.diyradiobutton.MainActivity">
+    <LinearLayout
+        style="@style/layout_lamp_item">
+
+        <TextView
+            style="@style/text_lamp_item"
+            android:text="模式"/>
+
+        <RadioGroup
+            android:id="@+id/mode_group"
+            style="@style/radiogroup_lamp_op">
+
+            <RadioButton
+                android:id="@+id/cool_mode"
+                style="@style/DeviceRadioButton"
+                android:gravity="center"
+                android:text="冷风"/>
+
+            <RadioButton
+                android:id="@+id/warm_mode"
+                style="@style/DeviceRadioButton"
+                android:text="暖风"/>
+
+            <RadioButton
+                android:id="@+id/drying_mode"
+                style="@style/DeviceRadioButton"
+                android:text="除湿"/>
+
+            <RadioButton
+                android:id="@+id/cloud_mode"
+                style="@style/DeviceRadioButton"
+                android:text="送风"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
